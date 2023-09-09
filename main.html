@@ -4,49 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DoseDocker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <!-- Daily Activity Log -->
-    <div class = "box_table">
-        <div class="three-col-table">
-            <h1>Your Data Table</h1>
-            <table>
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Name</th>
-                        <th>Age</th>
-                        <th>Email</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Data will be populated here dynamically from MongoDB -->
-                </tbody>
-            </table>
+
+    <!-- Box Status -->
+    <div class = "box">
+        <!-- Card per Day (7 card in total) -->
+        <div class = "card">
+            <h2>Sun</h2>
+        </div>
+        <div class = "card">
+            <h2>Mon</h2>
+        </div>
+        <div class = "card">
+            <h2>Tue</h2>
+        </div>
+        <div class = "card">
+            <h2>Wed</h2>
+        </div>
+        <div class = "card">
+            <h2>Thu</h2>
+        </div>
+        <div class = "card">
+            <h2>Fri</h2>
+        </div>
+        <div class = "card">
+            <h2>Sat</h2>
         </div>
     </div>
     
-    <!-- Box Status -->
-    <div class = "box">
-        <!-- Card per Day -->
-        <div class = "card">
-
-        </div>
-    </div>
-
-    </div>
-
-    <!-- Box Signature Log -->
-    <div class = "box_table">
-        <div class="three-col-table">
-            <h1>Your Data Table</h1>
+    <div class = "box-table">
+        <div class="table">
+            <h1>Patient Actions Log</h1>
             <table>
                 <thead>
                     <tr>
-                        <th>ID</th>
-                        <th>Name</th>
-                        <th>Age</th>
-                        <th>Email</th>
+                        <th>Patient</th>
+                        <th>Date</th>
+                        <th>Time/s</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be populated here dynamically from MongoDB -->
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="table">
+            <h1>Medicine Administration Log</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Patient</th>
+                        <th>Medicine</th>
+                        <th>Nurses-in-charge</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -55,6 +72,7 @@
             </table>
         </div>
     </div>
+
     
 </body>
 </html>
