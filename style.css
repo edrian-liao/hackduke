@@ -4,9 +4,54 @@ body {
     margin: 30px auto 0;
     padding: 30px;
 }
+
 h1, h2, caption{
     font-family: 'Roboto', sans-serif;
 }
+
+/* Style for the search bar container */
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 60%; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    padding: 20px;
+    /* background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+/* Style for the input fields */
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style for the search button */
+button {
+    background-color: #7d817f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Hover effect for the search button */
+button:hover {
+    background-color: #70E9AD;
+    color: #000;
+}
+
 
 .box {
     max-width: 100%;
@@ -35,13 +80,14 @@ h1, h2, caption{
     text-align: center;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
     .box {
         flex-direction: column;
         align-items: center;
+        max-width: 30%;
     }
     .card {
-        width: 70%;
+        width: 60%;
     }
 }
 
@@ -51,15 +97,6 @@ h1, h2, caption{
     flex-wrap: wrap; /* Allow tables to wrap to the next line on smaller screens */
     justify-content: space-between; /*Space tables evenly*/
     margin: 20px auto;
-}
-
-.table {
-    background-color: #fff;
-    width: 45%;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    
 }
 
 table {
@@ -79,14 +116,14 @@ th {
 }
 
  /* Media query for responsiveness on smaller screens */
- @media (max-width: 1300px) {
+@media (max-width: 1300px) {
     .table-container {
         flex-direction: column; /* Stack tables vertically */
         align-items: center; /* Center-align tables */
     }
 
     .table {
-        background-color: #fff;
+        background-color: #70E9AD;
         width: 100%;
         padding: 20px;
         border-radius: 5px;
@@ -102,7 +139,7 @@ th {
         flex-wrap: nowrap; /* Prevent tables from wrapping on larger screens */
     }
     .table {
-        background-color: #fff;
+        background-color: #70E9AD;
         width: 45%;
         padding: 20px;
         border-radius: 5px;
