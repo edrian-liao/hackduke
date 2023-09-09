@@ -31,6 +31,7 @@ input[type="text"] {
     margin-right: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-family: 'Lato', sans-serif;
     font-size: 16px;
 }
 
@@ -91,7 +92,7 @@ button:hover {
     }
 }
 
-.box-table {
+.table-container {
     max-width: 100%;
     display: flex; /* Use flexbox for horizontal layout */
     flex-wrap: wrap; /* Allow tables to wrap to the next line on smaller screens */

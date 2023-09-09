@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Edrian Liao",
+        "prescriptions": ["Warfarin", "Oxytocin", "Insulin"],
+        "timestamps": ["2023-09-09 12:11:13","2023-09-10 16:30:32","2023-09-11 14:23:13"],
+        "access": [1,0,1]
+    },
+    {
+        "name": "Annabelle Chu",
+        "prescriptions": ["Ibuprofen", "Oxytocin", "Paracetamol"],
+        "timestamps": ["2023-09-09 12:08:07","2023-09-10 17:30:30","2023-09-11 15:01:37"], 
+        "access": [1,0,0]
+    },
+    {
+        "name": "Jessica Tiu",
+        "prescriptions": ["Penicillin", "Amoxicillin", "Insulin"],
+        "timestamps": ["2023-09-09 12:00:14","2023-09-10 16:28:21","2023-09-11 13:44:15"], 
+        "access": [1,1,1]
+    }
+]
