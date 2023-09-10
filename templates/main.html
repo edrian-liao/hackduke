@@ -22,6 +22,7 @@
     <!-- Box Status -->
     <div class = "box">
         <!-- Card per Day (7 card in total) -->
+        {% for p in box_status_data %}
         <div class = "card">
             <h2>Sun</h2>
         </div>
@@ -54,7 +55,7 @@
                     <tr>
                         <th>Patient</th>
                         <th>Date</th>
-                        <th>Time/s</th>
+                        <th>Time</th>
                     </tr>
                 </thead>
                 <tbody>

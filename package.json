@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "jsdom": "^22.1.0"
+    "jsdom": "^22.1.0",
+    "mongodb": "^6.0.0"
   },
   "devDependencies": {
     "browserify": "^17.0.0"
