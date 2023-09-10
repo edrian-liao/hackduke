@@ -115,18 +115,23 @@
 <script setup lang="ts">
 import { onMounted, ref, Ref } from 'vue'
 
-const data: Ref<any[]> = ref([])
+const box_status_data: Ref<any[]> = ref([])
 
 async function refresh() {
   const result = await fetch("/api/box_status")
-  data.value = await result.json()
+  box_status_data.value = await result.json()
 }
 onMounted(refresh)
 
-async function search() {
-  const result = await fetch("/api/box_status")
-  data.value = await result.json()
+// props
+interface Props {
+    legal: string
 }
+  
+// default values for props
+const props = withDefaults(defineProps<Props>(), {
+    legal: undefined
+})
 
 </script>
 
