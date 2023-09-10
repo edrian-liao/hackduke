@@ -19,4 +19,7 @@ Technicality-wise, the system's pipeline goes like this:
 5. Flask to MongoDB
 6. MongoDB to Node.js
 7. Node.js controls output elements on the Web-based App
+   
+### What's next for DoseDocker
+We hope that the data collected through DoseDocker can be used to optimize the administration of medicines, possibly by making visible the times that caregivers are most accurate in preparing them.
 
