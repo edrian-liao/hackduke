@@ -47,28 +47,14 @@
       <!-- Box Status -->
       <div class = "box">
           <!-- Card per Day (7 card in total) -->
-          <div class = "card">
-              <h2>Sun</h2>
-              <p :items=data></p>
-          </div>
-          <div class = "card">
-              <h2>Mon</h2>
-          </div>
-          <div class = "card">
-              <h2>Tue</h2>
-          </div>
-          <div class = "card">
-              <h2>Wed</h2>
-          </div>
-          <div class = "card">
-              <h2>Thu</h2>
-          </div>
-          <div class = "card">
-              <h2>Fri</h2>
-          </div>
-          <div class = "card">
-              <h2>Sat</h2>
-          </div>
+          <!-- Reference: https://bootstrap-vue.org/docs/components/card#background-and-border-variants -->
+          <b-card bg-variant="success"><h2>Sun</h2></b-card>
+          <b-card bg-variant="success"><h2>Mon</h2></b-card>
+          <b-card bg-variant="success"><h2>Tue</h2></b-card>
+          <b-card bg-variant="warning"><h2>Wed</h2></b-card>
+          <b-card bg-variant="secondary"><h2>Thu</h2></b-card>
+          <b-card bg-variant="secondary"><h2>Fri</h2></b-card>
+          <b-card bg-variant="secondary"><h2>Sat</h2></b-card>
       </div>
       
       <div class = "table-container">
@@ -116,18 +102,23 @@
 <script setup lang="ts">
 import { onMounted, ref, Ref } from 'vue'
 
-const data: Ref<any[]> = ref([])
+const box_status_data: Ref<any[]> = ref([])
 
 async function refresh() {
   const result = await fetch("/api/box_status")
-  data.value = await result.json()
+  box_status_data.value = await result.json()
 }
 onMounted(refresh)
 
-async function search() {
-  const result = await fetch("/api/box_status")
-  data.value = await result.json()
+// props
+interface Props {
+    legal: string
 }
+  
+// default values for props
+const props = withDefaults(defineProps<Props>(), {
+    legal: undefined
+})
 
 </script>
 
