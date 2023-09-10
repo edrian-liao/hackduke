@@ -69,6 +69,8 @@ const username = encodeURIComponent('annabelle');
 const password = encodeURIComponent('lwy9Ao3mpoDAVEeN');
 const uri = `mongodb+srv://${username}:${password}@hackduke.hasnibk.mongodb.net/?retryWrites=true&w=majority`;
 
+
+
 async function connectToMongoDB() {
     const client = new MongoClient(uri);
 
@@ -80,16 +82,27 @@ async function connectToMongoDB() {
         const collection = db.collection('pillbox'); // Replace with your collection name
 
         const cursor = collection.find();
-
-        await cursor.forEach(document => {
-            console.log(document);
-        });
+        // console.log(cursor);    
+        await listDatabases(client);
     } catch (e) {
         console.error('Error:', e);
     } finally {
         await client.close();
     }
+
+    
+
 }
 
+async function listDatabases(client){
+    databasesList = await client.db().admin().listDatabases();
+ 
+    console.log("Databases:");
+    databasesList.databases.forEach(db => console.log(` - ${db.name}`));
+};
+
+
+
 connectToMongoDB();
+
 
