@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <!-- <h1 class = "title">DoseDocker</h1>
+    <p class = "subtitle">Medication monitoring system for nurses</p> -->
     <div class = "search-container">
         <label for="filter1">Patient Name: </label>
         <input type="text" id="filter1" placeholder="e.g. Edrian Liao">
@@ -48,13 +50,13 @@
     <div class = "table-container">
         <div class="table">
             <h1>Patient Actions Log</h1>
-            <p>Insert description of this table</p>
+            <p>Time log of patient's attempts to open the pill box.</p>
             <table id = "actions-log">
                 <thead>
                     <tr>
                         <th>Patient</th>
                         <th>Date</th>
-                        <th>Time/s</th>
+                        <th>Time</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -66,7 +68,7 @@
 
         <div class="table">
             <h1>Medicine Administration Log</h1>
-            <p>Insert description of this table</p>
+            <p>List of nurses who placed the prescriptions in the patient's pill box.</p>
             <table id = "admin-log">
                 <thead>
                     <tr>
@@ -81,7 +83,9 @@
             </table>
         </div>
     </div>
-
-    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2023 DoseDocker</p>
+    </footer>
+    <script src="bundle.js"></script>
 </body>
 </html>

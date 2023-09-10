@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Edrian Liao",
+        "prescriptions":["Warfarin", "Insulin"],
+        "nurses":["Nurse 1", "Nurse 7"]
+    },
+    {
+        "name": "Annabelle Chu",
+        "prescriptions":["Ibuprofen", "Amoxicillin"],
+        "nurses":["Nurse 4", "Nurse 6"]
+    },
+    {
+        "name": "Jessica Tiu",
+        "prescriptions":["Penicillin", "Tylenol"],
+        "nurses":["Nurse 2", "Nurse 3"]
+    }
+]
