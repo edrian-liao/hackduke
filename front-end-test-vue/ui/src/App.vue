@@ -49,7 +49,6 @@
           <!-- Card per Day (7 card in total) -->
           <div class = "card">
               <h2>Sun</h2>
-              <p :items=data></p>
           </div>
           <div class = "card">
               <h2>Mon</h2>
