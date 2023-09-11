@@ -21,8 +21,13 @@ function handleSearch() {
     while (table.rows.length > 1) {
         table.deleteRow(1);
     }
-    while (table.rows.length > 1) {
+    while (table3.rows.length > 1) {
         table3.deleteRow(1);
+    }
+    // refresh colors
+    for (let i = 0; i < cards.length; i++) {
+        // console.log(person2.status);
+        cards[i].style.backgroundColor = '#fff';
     }
     
 
@@ -73,7 +78,32 @@ function handleSearch() {
         // console.log(person2.status);
         if (person2.status[i] == 1) {
             // console.log(cards[i]);
-            cards[i].style.backgroundColor = '#70E9AD';
+
+            switch (i) {
+                case 0:
+                    cards[i].style.backgroundColor = '#575959';
+                    break;
+                case 1:
+                    cards[i].style.backgroundColor = '#ff7526';
+                    break;
+                case 2:
+                    cards[i].style.backgroundColor = 'orange';
+                    break;
+                case 3:
+                    cards[i].style.backgroundColor = '#eee152';
+                    break;
+                case 4:
+                    cards[i].style.backgroundColor = '#32fd1d';
+                    break;
+                case 5:
+                    cards[i].style.backgroundColor = '#4155A0';
+                    break;
+                case 6:
+                    cards[i].style.backgroundColor = '#575959';
+                    break;
+                default:
+                    cards[i].style.backgroundColor = 'white';
+            }
         }
     }
 
